@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/bookFacilityCard"
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/card"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/bookedDateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/bookedDateLabel"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="28dp"
+                android:text="sgdgdhghdh" />
+
+            <TextView
+                android:id="@+id/bookedDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="113dp"
+                android:text="Booked Date"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fromTimeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginBottom="11dp"
+                android:text=" From : "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/facilityLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="114dp"
+                android:layout_marginBottom="53dp"
+                android:text="Facility"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fromTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/fromTimeLabel"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="68dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/facilityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/fromTimeLabel"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="174dp"
+                android:layout_marginTop="-42dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/toTimeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/bookedDateLabel"
+                android:layout_alignTop="@+id/fromTimeLabel"
+                android:text="             TO : "
+                android:textStyle="bold" />
+            android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/toTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/fromTimeLabel"
+                android:layout_marginStart="-113dp"
+                android:layout_toEndOf="@+id/bookedDateLabel"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/requestIDLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/fromTimeLabel"
+                android:layout_alignTop="@+id/bookedDateLabel"
+                android:layout_marginStart="-9dp"
+                android:layout_marginTop="0dp"
+                android:text="Request ID"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/requestIdText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/bookedDateLabel"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="91dp"
+                android:layout_marginTop="-3dp"
+                android:text="reqID" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

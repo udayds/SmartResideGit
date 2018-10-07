@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacilityFragment">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/bookedDateViewText"
+                android:layout_width="176dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/bookedDateTextView"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/bookedDateTextView"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/bookedTimeFromText"
+                android:layout_width="176dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/bookedTimeFrom"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/bookedTimeFrom"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/bookedTimeToText"
+                android:layout_width="176dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/toBookTime"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/toBookTime"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/contactNameViewText"
+                android:layout_width="171dp"
+                android:layout_height="29dp"
+                android:layout_alignBottom="@+id/contactNameView"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/contactNameView"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/contactNumViewText"
+                android:layout_width="176dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/contactNumberView"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/contactNumberView"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/bookedDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_above="@+id/bookedTimeFrom"
+                android:layout_marginStart="43dp"
+                android:layout_marginBottom="20dp"
+                android:text="Booked Date"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/bookedTimeFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/toBookTime"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="20dp"
+                android:text="Booked From"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/contactDetailsView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/contactNameView"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="20dp"
+                android:text="Contact Details Provided"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/contactNumberView"
+                android:layout_width="117dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="123dp"
+                android:text="Contact Number" />
+
+            <TextView
+                android:id="@+id/contactNameView"
+                android:layout_width="117dp"
+                android:layout_height="30dp"
+                android:layout_above="@+id/contactNumberView"
+                android:layout_alignStart="@+id/fromDateText"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="Contact Name" />
+
+            <TextView
+                android:id="@+id/toBookTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/contactDetailsView"
+                android:layout_marginStart="43dp"
+                android:layout_marginBottom="30dp"
+                android:text="Booked Till"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/facilityView"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bookedDateTextView"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="20dp"
+                android:text="Facility"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/bookingIdView"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/facilityView"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="15dp"
+                android:text="Booking ID"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/backView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/viewBookingHeader"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="35dp"
+                android:gravity="center"
+                android:text="Back" />
+
+            <Button
+                android:id="@+id/editBooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignTop="@+id/backView"
+                android:layout_alignEnd="@+id/contactNumberView"
+                android:text="Edit" />
+
+            <TextView
+                android:id="@+id/viewBookingHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:lineSpacingExtra="8sp"
+                android:text="Booking Details"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/facilityViewText"
+                android:layout_width="176dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/facilityView"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/facilityView"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/requestIdText"
+                android:layout_width="176dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/bookingIdView"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="0dp"
+                android:layout_toEndOf="@+id/bookingIdView"
+                android:text="" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

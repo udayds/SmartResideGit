@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ViewComplaint">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/dateViewText"
+                android:layout_width="176dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/fromDateTextView"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/priorityView"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/priorityViewText"
+                android:layout_width="176dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/priorityView"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/priorityView"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/probDescViewText"
+                android:layout_width="176dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/problemDescView"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/problemDescView"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/contactNameViewText"
+                android:layout_width="171dp"
+                android:layout_height="29dp"
+                android:layout_alignBottom="@+id/contactNameView"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/contactNameView"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/contactNumViewText"
+                android:layout_width="176dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/contactNumberView"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/contactNumberView"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/fromDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_above="@+id/priorityView"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="43dp"
+                android:text="From When"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/priorityView"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/problemDescView"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="40dp"
+                android:text="Status"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/contactDetailsView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/contactNameView"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="20dp"
+                android:text="Contact Details Provided"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/fileUploaded"
+                android:layout_width="101dp"
+                android:layout_height="30dp"
+                android:layout_above="@+id/contactDetailsView"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="20dp"
+                android:text="File Upload"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/contactNumberView"
+                android:layout_width="117dp"
+                android:layout_height="30dp"
+                android:layout_alignStart="@+id/fromDateText"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="93dp"
+                android:text="Contact Number" />
+
+            <TextView
+                android:id="@+id/contactNameView"
+                android:layout_width="117dp"
+                android:layout_height="30dp"
+                android:layout_above="@+id/contactNumberView"
+                android:layout_marginBottom="10dp"
+                android:layout_alignStart="@+id/fromDateText"
+                android:layout_marginLeft="40dp"
+                android:text="Contact Name" />
+
+            <TextView
+                android:id="@+id/problemDescView"
+                android:layout_width="85dp"
+                android:layout_height="39dp"
+                android:layout_above="@+id/fileUploaded"
+                android:layout_marginStart="43dp"
+                android:layout_marginBottom="20dp"
+                android:text="Problem Description"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/concernView"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/fromDateTextView"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:text="Concern"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/complaintIdView"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/concernView"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="15dp"
+                android:text="Complaint ID"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/backView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/viewComplaontHeader"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="34dp"
+                android:gravity="center"
+                android:text="Back" />
+
+            <Button
+                android:id="@+id/editComplaint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/fileUploaded"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="36dp"
+                android:gravity="center"
+                android:text="Edit" />
+
+            <TextView
+                android:id="@+id/viewComplaontHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:lineSpacingExtra="8sp"
+                android:text="Complaint Details"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/concernViewText"
+                android:layout_width="176dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/concernView"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/priorityView"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/complaintIdText"
+                android:layout_width="176dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/complaintIdView"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="0dp"
+                android:layout_toEndOf="@+id/priorityView"
+                android:text="" />
+
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

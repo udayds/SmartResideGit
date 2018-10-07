@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/complaintCard"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/card"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/complaintTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/concernLabel"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="28dp"
+                android:text="sgdgdhghdh" />
+
+            <TextView
+                android:id="@+id/concernLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="113dp"
+                android:text="Concern"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fromDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginBottom="11dp"
+                android:text="From"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fromDateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/fromDateLabel"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="68dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/statusLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/concernLabel"
+                android:layout_alignTop="@+id/fromDateLabel"
+                android:text="Status"
+                android:textStyle="bold" />
+            android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/statusTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/fromDateLabel"
+                android:layout_marginStart="-113dp"
+                android:layout_toEndOf="@+id/concernLabel"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/cidLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/fromDateLabel"
+                android:layout_alignTop="@+id/complaintTitle"
+                android:text="ComplaintId"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cidTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/complaintTitle"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="105dp"
+                android:text="cidTv" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

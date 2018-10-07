@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+    <item android:title="Block - A">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_profile"
+                android:title="Profile" />
+            <item
+                android:id="@+id/nav_discussionForum"
+                android:icon="@drawable/ic_discussion"
+                android:title="Discussion Forum" />
+            <item
+                android:id="@+id/nav_events"
+                android:icon="@drawable/ic_events"
+                android:title="Events" />
+        </menu>
+    </item>
+
+    <item android:title="Block - B">
+        <menu>
+            <item
+                android:id="@+id/nav_security"
+                android:icon="@drawable/ic_security"
+                android:title="Security" />
+            <item
+                android:id="@+id/nav_bookFacility"
+                android:icon="@drawable/ic_facility"
+                android:title="Book a Facility" />
+        </menu>
+    </item>
+
+    <item android:title="Block - C">
+        <menu>
+            <item
+                android:id="@+id/nav_complaints"
+                android:icon="@drawable/ic_complaint"
+                android:title="Complaints" />
+            <item
+                android:id="@+id/nav_payMaintenance"
+                android:icon="@drawable/ic_pay"
+                android:title="Pay Maintenance" />
+        </menu>
+    </item>
+
+</menu>

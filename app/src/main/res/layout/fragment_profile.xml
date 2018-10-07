@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ScrollView01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="18dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/emailIdViewText"
+                    android:layout_width="176dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/emailIdView"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/emailIdView"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/priorityViewText"
+                    android:layout_width="176dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/flatNumberView"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/flatNumberView"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/parkingSlotText"
+                    android:layout_width="176dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/parkingSlotView"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/parkingSlotView"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/OtherResidentText"
+                    android:layout_width="176dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/OtherResidentView"
+                    android:layout_marginStart="13dp"
+                    android:layout_toEndOf="@+id/OtherResidentView"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/AadharCardText"
+                    android:layout_width="171dp"
+                    android:layout_height="29dp"
+                    android:layout_alignBottom="@+id/AadharCardView"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/AadharCardView"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/panText"
+                    android:layout_width="176dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/panView"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/panView"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/emailIdView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_above="@+id/flatNumberView"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="43dp"
+                    android:text="Email ID"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/flatNumberView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/parkingSlotView"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="40dp"
+                    android:text="Flat Number"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/kycDetailsView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/AadharCardView"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="KYC Details"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/OtherResidentView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/kycDetailsView"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Other Residents"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/panView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/fromDateText"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="140dp"
+                    android:text="Contact Number" />
+
+                <TextView
+                    android:id="@+id/AadharCardView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/panView"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignStart="@+id/fromDateText"
+                    android:layout_marginLeft="40dp"
+                    android:text="Aadhar Card" />
+
+                <TextView
+                    android:id="@+id/parkingSlotView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/OtherResidentView"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Parking Slot"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/phoneNumberView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/emailIdView"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="Phone Number"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/nameView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/phoneNumberView"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Name"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/backViewProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/nameViewText"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="35dp"
+                    android:gravity="center"
+                    android:text="Back" />
+
+                <Button
+                    android:id="@+id/editProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="35dp"
+                    android:layout_toEndOf="@+id/nameView"
+                    android:gravity="center"
+                    android:text="Edit Profile" />
+
+
+
+
+                <TextView
+                    android:id="@+id/phoneNumberViewText"
+                    android:layout_width="176dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/phoneNumberView"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/phoneNumberView"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/nameViewText"
+                    android:layout_width="176dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/nameView"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toEndOf="@+id/nameView"
+                    android:text="" />
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>

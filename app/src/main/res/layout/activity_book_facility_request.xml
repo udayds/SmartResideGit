@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookFacilityFragment">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView02"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+
+            <TextView
+                android:id="@+id/bookFacilityFromDateText"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="43dp"
+                android:layout_marginTop="132dp"
+                android:text="Choose Date"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/contactNumberFacility"
+                android:layout_width="117dp"
+                android:layout_height="30dp"
+                android:layout_alignStart="@+id/bookFacilityFromDateText"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginBottom="143dp"
+                android:text="Contact Number" />
+
+            <TextView
+                android:id="@+id/contactNameFacility"
+                android:layout_width="117dp"
+                android:layout_height="30dp"
+                android:layout_above="@+id/contactNumberFacility"
+                android:layout_alignStart="@+id/bookFacilityFromDateText"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="10dp"
+                android:text="Contact Name" />
+
+            <TextView
+                android:id="@+id/slotFacility"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/facility"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="187dp"
+                android:text="Select slot:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fromTimeFacility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/facility"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="230dp"
+                android:text="From"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/toTimeFacility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/facility"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="273dp"
+                android:text="To"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/facility"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/bookFacilityFromDateText"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="89dp"
+                android:text="Facility"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinnerFacility"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/facility"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/bookFacilityFromDateText" />
+
+
+            <Spinner
+                android:id="@+id/fromTimeTextFacility"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/facility"
+                android:layout_marginStart="-49dp"
+                android:layout_marginTop="143dp"
+                android:layout_toEndOf="@+id/bookFacilityFromDateText" />
+
+            <Spinner
+                android:id="@+id/toTimeTextFacility"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/facility"
+                android:layout_marginStart="-46dp"
+                android:layout_marginTop="181dp"
+                android:layout_toEndOf="@+id/bookFacilityFromDateText" />
+
+            <EditText
+                android:id="@+id/fromDateLabelFacility"
+                android:layout_width="344dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/bookFacilityFromDateText"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="114dp"
+                android:layout_toEndOf="@+id/bookFacilityFromDateText"
+                android:background="#11111111"
+                android:ems="10" />
+
+            <Button
+                android:id="@+id/requestFacility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/toggleContactFacility"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="-27dp"
+                android:layout_marginBottom="70dp"
+                android:gravity="center"
+                android:text="Request" />
+
+            <Switch
+                android:id="@+id/toggleContactFacility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="229dp"
+                android:text="Provide contact details   "
+                android:textOff="No"
+                android:textOn="Yes" />
+
+            <EditText
+                android:id="@+id/contactNametextFacility"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/chooseFile"
+                android:layout_alignTop="@+id/contactNameFacility"
+                android:layout_toEndOf="@+id/contactNameFacility"
+                android:background="#11111111"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/phoneNumTextFacility"
+                android:layout_width="139dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/contactNametextFacility"
+                android:layout_alignTop="@+id/contactNumberFacility"
+                android:background="#11111111"
+                android:ems="10"
+                android:maxLength="11"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/facilityRequestHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:lineSpacingExtra="8sp"
+                android:text="Facility Request"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="24sp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComplaintsFragment">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+
+
+
+        <TextView
+            android:id="@+id/fromDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="132dp"
+            android:text="From When"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/priority"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/fromDateText"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="178dp"
+            android:text="Priority"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/fileUpload"
+            android:layout_width="101dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/fromDateText"
+            android:layout_marginBottom="222dp"
+            android:text="File Upload"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/contactNumber"
+            android:layout_width="117dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/fromDateText"
+            android:layout_marginBottom="110dp"
+            android:text="Contact Number" />
+
+        <TextView
+            android:id="@+id/contactName"
+            android:layout_width="117dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/contactNumber"
+            android:layout_alignStart="@+id/fromDateText"
+            android:text="Contact Name" />
+
+        <TextView
+            android:id="@+id/slotFacility"
+            android:layout_width="85dp"
+            android:layout_height="39dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/concern"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="247dp"
+            android:text="Problem Description"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/concern"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/fromDateText"
+            android:layout_marginTop="89dp"
+            android:text="Concern"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/concern"
+            android:layout_toEndOf="@+id/fromDateText" />
+
+
+        <Spinner
+            android:id="@+id/prioritySpinner"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/concern"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="91dp"
+            android:layout_toEndOf="@+id/priority" />
+
+        <EditText
+            android:id="@+id/fromDateLabel"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/fromDateText"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="114dp"
+            android:background="#11111111"
+            android:layout_toEndOf="@+id/fromDateText"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="26dp"
+            android:gravity="center"
+            android:text="Raise Ticket" />
+
+        <EditText
+            android:id="@+id/probdesctext"
+            android:layout_width="207dp"
+            android:layout_height="61dp"
+            android:layout_alignTop="@+id/slotFacility"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/slotFacility"
+            android:background="#11111111"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/chooseFile"
+            android:layout_width="146dp"
+            android:layout_height="36dp"
+            android:layout_alignTop="@+id/fileUpload"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@+id/fileUpload"
+            android:text="Choose File"
+            android:textSize="14sp" />
+
+        <Switch
+            android:id="@+id/toggleContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="182dp"
+            android:text="Provide contact details   "
+            android:textOff="No"
+            android:textOn="Yes" />
+
+        <EditText
+            android:id="@+id/contactNametext"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/chooseFile"
+            android:layout_alignTop="@+id/contactName"
+            android:layout_toEndOf="@+id/contactName"
+            android:background="#11111111"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/phoneNumText"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/contactNametext"
+            android:layout_alignTop="@+id/contactNumber"
+            android:ems="10"
+            android:background="#11111111"
+            android:maxLength="11"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:lineSpacingExtra="8sp"
+            android:text="Complaint form"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="24sp" />
+
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
